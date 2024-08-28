@@ -10,28 +10,37 @@
     <title>Encriptador</title>
 </head>
 <body>
-    <header>
-        <img class="logo" src="./images/Logo.png" alt="logo de alura" >
-    </header>
-    <main>
-        <section>
-            <textarea class="text-area" placeholder="Escriba aqui"></textarea>
+    <div class="containerprincipal">
+        <header class="header">
+            <img class="logo" src="./images/Logo.png" alt="logo de alura">
+            <P class="textoheader">Encriptador</P>
+        </header>
+        <main>
+            <section class="section1">
+                <textarea class="text-area" placeholder="Escriba aqui"></textarea>
+                    <div>
+                        <h6 class="informacion">Por favor ingrese sólo letras minúsculas, sin acentos ni caracteres especiales</h6>
+                        <h6 class="informacion">El espacio es permitido</h6>
+                    </div>
+                    <div class="botones">
+                        <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                        <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                    </div>
+            </section>
+            <section class="section2">
+                <textarea class="mensaje" placeholder="Mensaje encriptado aparecera aqui"></textarea>
                 <div>
-                    <h6 class="informacion">Por favor ingrese sólo letras minúsculas, sin acentos ni caracteres especiales</h6>
-                    <h6 class="informacion">El espacio es permitido</h6>
+                    <button class="btn-copiar" id="btnCopiar">Copiar</button>
                 </div>
-                <div class="botones">
-                    <button class="btn-encriptar">Encriptar</button>
-                    <button class="btn-desencriptar">Desencriptar</button>
-                </div>
-        </section>
-        <section>
-            <textarea class="mensaje" placeholder="Mensaje encriptado aparecera aqui"></textarea>
-            <div>
-                <button class="btn-copiar">Copiar</button>
-            </div>
-        </section>
-    </main>
+            </section>
+        </main>
+        <footer>
+            <p>
+                <img class="logoreservado" src="./images/copyright.png" alt="logo de derechos reservados">
+                Diseñado por <strong class="JDRR7">JDRR7</strong>. Todos los derechos reservados.
+            </p>
+        </footer>
+    </div>
 <script src="./script.js"></script>
 </body>
 </html>
